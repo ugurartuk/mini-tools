@@ -1,0 +1,25 @@
+<!-- todo_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yapılacaklar Listesi</title>
+</head>
+<body>
+  <h2>Yapılacaklar Listem</h2>
+  <input id="girdi" type="text" placeholder="Bir görev yaz..." />
+  <button onclick="ekle()">Ekle</button>
+  <ul id="liste"></ul>
+
+  <script>
+    function ekle() {
+      let girdi = document.getElementById("girdi").value;
+      if (girdi) {
+        let li = document.createElement("li");
+        li.textContent = girdi;
+        document.getElementById("liste").appendChild(li);
+        document.getElementById("girdi").value = "";
+      }
+    }
+  </script>
+</body>
+</html>

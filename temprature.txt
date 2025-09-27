@@ -1,0 +1,18 @@
+# sıcaklık_dönüştürücü.py
+def c_to_f(c):
+    return (c * 9/5) + 32
+
+def f_to_c(f):
+    return (f - 32) * 5/9
+
+print("Sıcaklık Dönüştürücü")
+secim = input("C→F için '1', F→C için '2' yaz: ")
+
+if secim == "1":
+    c = float(input("Celsius: "))
+    print("Fahrenheit:", c_to_f(c))
+elif secim == "2":
+    f = float(input("Fahrenheit: "))
+    print("Celsius:", f_to_c(f))
+else:
+    print("Geçersiz seçim!")

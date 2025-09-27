@@ -1,0 +1,5 @@
+# zaman_goster.py
+import datetime
+
+simdi = datetime.datetime.now()
+print("Şu anki tarih ve saat:", simdi.strftime("%d-%m-%Y %H:%M:%S"))
